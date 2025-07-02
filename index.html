@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Meu Portfólio</title>
   <style>
     body {
@@ -25,20 +25,31 @@
     .botao:hover {
       transform: scale(1.05);
     }
+    #pdfViewer {
+      margin-top: 30px;
+      width: 80%;
+      height: 600px;
+      border: none;
+      display: none; /* escondido inicialmente */
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
   </style>
 </head>
 <body>
   <h1>Olá! Eu sou o Kevin</h1>
   <p>Veja meu currículo abaixo:</p>
 
-  <!-- Botão para abrir o documento Word -->
-  <button class="botao" onclick="window.open('CV_KEVIN.docx', '_blank')">
+  <!-- Botão para mostrar o PDF embutido -->
+  <button class="botao" onclick="document.getElementById('pdfViewer').style.display = 'block'; document.getElementById('pdfViewer').src = 'CV_KEVIN.pdf';">
     Ver Currículo
   </button>
 
-  <!-- Botão para baixar o documento Word -->
-  <a href="CV_KEVIN.docx" download>
+  <!-- Botão para baixar o documento PDF -->
+  <a href="CV_KEVIN.pdf" download>
     <button class="botao">Baixar Currículo</button>
   </a>
+
+  <!-- iframe para exibir PDF -->
+  <iframe id="pdfViewer"></iframe>
 </body>
 </html>
