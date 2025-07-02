@@ -12,18 +12,33 @@
       color: white;
     }
     .botao {
-      padding: 10px 20px;
+      padding: 12px 24px;
       background: white;
       color: #4facfe;
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-size: 16px;
+      margin: 10px;
+      transition: transform 0.2s;
+    }
+    .botao:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <h1>Olá! Eu sou o Kevin</h1>
-  <p>Este é o meu site feito com GitHub Pages!</p>
-  <button class="botao" onclick="alert('Você clicou!')">Clique aqui</button>
+  <p>Veja meu currículo abaixo:</p>
+
+  <!-- Botão para abrir o documento Word -->
+  <button class="botao" onclick="window.open('CV_KEVIN.docx', '_blank')">
+    Ver Currículo
+  </button>
+
+  <!-- Botão para baixar o documento Word -->
+  <a href="CV_KEVIN.docx" download>
+    <button class="botao">Baixar Currículo</button>
+  </a>
 </body>
 </html>
