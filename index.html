@@ -3,46 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <title>Meu Portfólio</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      padding: 40px;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-    }
-    .botao {
-      padding: 12px 24px;
-      background: white;
-      color: #4facfe;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      margin: 10px;
-      transition: transform 0.2s;
-    }
-    .botao:hover {
-      transform: scale(1.05);
-    }
-    #pdfViewer {
-      margin-top: 30px;
-      width: 80%;
-      height: 600px;
-      border: none;
-      display: none; /* escondido inicialmente */
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>Olá! Eu sou o Kevin</h1>
   <p>Veja meu currículo abaixo:</p>
 
   <!-- Botão para mostrar o PDF embutido -->
-  <button class="botao" onclick="document.getElementById('pdfViewer').style.display = 'block'; document.getElementById('pdfViewer').src = 'CV_KEVIN.pdf';">
-    Ver Currículo
-  </button>
+  <button class="botao" onclick="mostrarCurriculo()">Ver Currículo</button>
 
   <!-- Botão para baixar o documento PDF -->
   <a href="CV_KEVIN.pdf" download>
@@ -51,5 +19,7 @@
 
   <!-- iframe para exibir PDF -->
   <iframe id="pdfViewer"></iframe>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
