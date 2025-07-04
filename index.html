@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Meu Portfólio</title>
-  <link rel="stylesheet" href="CSS/STYLE.CSS">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1>Olá! Eu sou o Kevin</h1>
   <p>Veja meu currículo abaixo:</p>
 
-  <!-- Botão para mostrar o PDF embutido -->
-  <button class="botao" onclick="mostrarCurriculo()">Ver Currículo</button>
+  <!-- Botão para abrir/fechar PDF -->
+  <button id="botaoToggle" class="botao" onclick="togglePDF()">Ver Currículo</button>
 
-  <!-- Botão para baixar o documento PDF -->
+  <!-- Botão para download -->
   <a href="CV_KEVIN.pdf" download>
     <button class="botao">Baixar Currículo</button>
   </a>
 
-  <!-- iframe para exibir PDF -->
   <iframe id="pdfViewer"></iframe>
 
-  <script src="JS/SCRIPT.JS"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
