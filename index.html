@@ -9,14 +9,15 @@
   <h1>Olá! Eu sou o Kevin</h1>
   <p>Veja meu currículo abaixo:</p>
 
-  <!-- Botão para abrir/fechar PDF -->
-  <button id="botaoToggle" class="botao" onclick="togglePDF()">Ver Currículo</button>
+  <!-- Botão toggle (sem alterar o estilo original) -->
+  <button class="botao" onclick="togglePDF()">Ver Currículo</button>
 
-  <!-- Botão para download -->
+  <!-- Botão para baixar o documento PDF -->
   <a href="CV_KEVIN.pdf" download>
     <button class="botao">Baixar Currículo</button>
   </a>
 
+  <!-- iframe para exibir PDF -->
   <iframe id="pdfViewer"></iframe>
 
   <script src="js/script.js"></script>
