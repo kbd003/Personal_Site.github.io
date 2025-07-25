@@ -14,6 +14,46 @@ body {
     padding: 20px;
 }
 
+/* Botão de idioma */
+.language-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4facfe;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.lang-btn .flag {
+    font-size: 16px;
+}
+
+.lang-btn #langText {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -270,6 +310,30 @@ footer {
     #pdfViewer {
         height: 500px;
     }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-item {
+        padding: 1.2rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .social-links a {
+        width: 200px;
+        justify-content: center;
+    }
+    
+    footer {
+        padding: 2rem 1rem;
+    }
 }
 
 @keyframes fadeInUp {
@@ -305,6 +369,40 @@ footer {
     
     #pdfViewer {
         height: 500px;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-item {
+        padding: 1.2rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .social-links a {
+        width: 200px;
+        justify-content: center;
+    }
+    
+    footer {
+        padding: 2rem 1rem;
+    }
+    
+    .language-toggle {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .lang-btn {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }
 
