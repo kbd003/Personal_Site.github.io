@@ -7,25 +7,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Botão de idioma -->
+  <div class="language-toggle">
+    <button id="languageBtn" class="lang-btn" onclick="toggleLanguage()">
+      <span class="flag">🇺🇸</span>
+      <span id="langText">EN</span>
+    </button>
+  </div>
+
   <div class="container">
     <header class="hero">
-      <h1>Olá! Eu sou o Kevin</h1>
-      <p class="subtitle">Desenvolvedor | Profissional | Inovador</p>
-      <p class="description">Veja meu currículo abaixo e conheça minha trajetória profissional:</p>
+      <h1 data-pt="Olá! Eu sou o Kevin" data-en="Hello! I'm Kevin">Olá! Eu sou o Kevin</h1>
+      <p class="subtitle" data-pt="Desenvolvedor | Profissional | Inovador" data-en="Developer | Professional | Innovator">Desenvolvedor | Profissional | Inovador</p>
+      <p class="description" data-pt="Veja meu currículo abaixo e conheça minha trajetória profissional:" data-en="Check out my resume below and learn about my professional journey:">Veja meu currículo abaixo e conheça minha trajetória profissional:</p>
     </header>
 
     <div class="buttons-container">
       <!-- Botão toggle para visualizar PDF -->
       <button id="botaoToggle" class="botao primary" onclick="togglePDF()">
         <span class="icon">👁️</span>
-        Ver Currículo
+        <span data-pt="Ver Currículo" data-en="View Resume">Ver Currículo</span>
       </button>
 
       <!-- Botão para baixar o documento PDF -->
       <a href="CV_KEVIN.pdf" download>
         <button class="botao secondary">
           <span class="icon">⬇️</span>
-          Baixar Currículo
+          <span data-pt="Baixar Currículo" data-en="Download Resume">Baixar Currículo</span>
         </button>
       </a>
     </div>
@@ -36,16 +44,16 @@
     </div>
 
     <footer>
-      <p>&copy; 2025 Kevin - Todos os direitos reservados</p>
+      <p data-pt="&copy; 2025 Kevin - Todos os direitos reservados" data-en="&copy; 2025 Kevin - All rights reserved">&copy; 2025 Kevin - Todos os direitos reservados</p>
       
       <div class="contact-section">
-        <h3>Entre em Contato</h3>
+        <h3 data-pt="Entre em Contato" data-en="Get in Touch">Entre em Contato</h3>
         
         <div class="contact-grid">
           <div class="contact-item">
             <span class="contact-icon">📱</span>
             <div class="contact-info">
-              <strong>WhatsApp / Chamadas</strong>
+              <strong data-pt="WhatsApp / Chamadas" data-en="WhatsApp / Calls">WhatsApp / Chamadas</strong>
               <a href="tel:+5513982291543">+55 13 98229-1543</a>
             </div>
           </div>
@@ -53,18 +61,18 @@
           <div class="contact-item">
             <span class="contact-icon">📧</span>
             <div class="contact-info">
-              <strong>Email Principal</strong>
+              <strong data-pt="Email Principal" data-en="Primary Email">Email Principal</strong>
               <a href="mailto:kevinbd2003.kb@gmail.com">kevinbd2003.kb@gmail.com</a>
-              <small>(envio e recebimento)</small>
+              <small data-pt="(envio e recebimento)" data-en="(send and receive)">(envio e recebimento)</small>
             </div>
           </div>
           
           <div class="contact-item">
             <span class="contact-icon">📩</span>
             <div class="contact-info">
-              <strong>Email Alternativo</strong>
+              <strong data-pt="Email Alternativo" data-en="Alternative Email">Email Alternativo</strong>
               <a href="mailto:kevinbd2003@hotmail.com">kevinbd2003@hotmail.com</a>
-              <small>(apenas recebimento)</small>
+              <small data-pt="(apenas recebimento)" data-en="(receive only)">(apenas recebimento)</small>
             </div>
           </div>
         </div>
