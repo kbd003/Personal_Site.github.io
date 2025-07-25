@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Meu Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin - Meu Portfólio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Olá! Eu sou o Kevin</h1>
-  <p>Veja meu currículo abaixo:</p>
+  <div class="container">
+    <header class="hero">
+      <h1>Olá! Eu sou o Kevin</h1>
+      <p class="subtitle">Desenvolvedor | Profissional | Inovador</p>
+      <p class="description">Veja meu currículo abaixo e conheça minha trajetória profissional:</p>
+    </header>
 
-  <!-- Botão toggle (sem alterar o estilo original) -->
-  <button class="botao" onclick="togglePDF()">Ver Currículo</button>
+    <div class="buttons-container">
+      <!-- Botão toggle para visualizar PDF -->
+      <button id="botaoToggle" class="botao primary" onclick="togglePDF()">
+        <span class="icon">👁️</span>
+        Ver Currículo
+      </button>
 
-  <!-- Botão para baixar o documento PDF -->
-  <a href="CV_KEVIN.pdf" download>
-    <button class="botao">Baixar Currículo</button>
-  </a>
+      <!-- Botão para baixar o documento PDF -->
+      <a href="CV_KEVIN.pdf" download>
+        <button class="botao secondary">
+          <span class="icon">⬇️</span>
+          Baixar Currículo
+        </button>
+      </a>
+    </div>
 
-  <!-- iframe para exibir PDF -->
-  <iframe id="pdfViewer"></iframe>
+    <!-- iframe para exibir PDF -->
+    <div class="pdf-container">
+      <iframe id="pdfViewer"></iframe>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Kevin - Todos os direitos reservados</p>
+      <div class="social-links">
+        <a href="#" title="LinkedIn">💼</a>
+        <a href="#" title="GitHub">💻</a>
+        <a href="#" title="Email">📧</a>
+      </div>
+    </footer>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
