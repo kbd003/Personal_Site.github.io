@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observar elementos para animação
-    document.querySelectorAll('.hero, .buttons-container, .pdf-container, footer').forEach(element => {
+    document.querySelectorAll('.hero, .about-section, .tech-section, .experience-section, .buttons-container, .pdf-container, footer').forEach(element => {
         observer.observe(element);
     });
     
