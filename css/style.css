@@ -142,7 +142,7 @@ h1 {
 
 .botao.primary:hover {
     background: linear-gradient(45deg, #f8f9fa, #ffffff);
-    color: #00a8ff;
+    color: rgba(9, 2, 131, 0.392);;
 }
 
 .botao.secondary:hover {
