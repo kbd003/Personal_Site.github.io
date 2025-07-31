@@ -250,7 +250,7 @@ h1 {
 }
 
 .tech-item:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(5, 37, 169, 0.817);
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
