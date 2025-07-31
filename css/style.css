@@ -221,7 +221,7 @@ h1 {
 .tech-category:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgb(38, 22, 177);
 }
 
 .tech-category h3 {
