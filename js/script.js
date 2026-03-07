@@ -86,7 +86,7 @@ function togglePDF() {
     } else {
         // Se estiver escondido, mostra
         iframe.style.display = 'block';
-        iframe.src = 'Curriculo_portuguesTI.pdf';
+        iframe.src = 'Curr%C3%ADculo_portuguesTI.pdf';
         if (currentLanguage === 'pt') {
             botao.innerHTML = '<span class="icon">❌</span> <span>Fechar Currículo</span>';
         } else {
