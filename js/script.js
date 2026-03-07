@@ -95,6 +95,17 @@ function togglePDF() {
     }
 }
 
+// Função para baixar o CV correto de acordo com o idioma atual
+function downloadCV() {
+    const file = currentLanguage === 'en' ? 'CV_TI_EN.pdf' : 'Curr%C3%ADculo_portuguesTI.pdf';
+    const link = document.createElement('a');
+    link.href = file;
+    link.download = currentLanguage === 'en' ? 'CV_TI_EN.pdf' : 'Currículo_portuguesTI.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 // Animação de partículas flutuantes
 function createParticle() {
     const particle = document.createElement('div');
